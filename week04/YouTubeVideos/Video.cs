@@ -18,7 +18,7 @@ public class Video
     {
         int minutes = _length/60;
         int seconds = _length%60;
-        Console.WriteLine($"'{_title}' by {_author}, Video Length({minutes}:{seconds}):");
+        Console.WriteLine($"'{_title}' by {_author}, Video Length({minutes}:{seconds}), Comment Count({_comments.Count()}):");
         foreach(Comment comment in _comments)
         {    
             string text = comment.ShowComment();
