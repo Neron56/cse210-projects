@@ -18,7 +18,6 @@ class Program
 
 
         Console.WriteLine("Dan the Man's order:");
-        Console.WriteLine("");
         List<Product> order1 = [salami, umbrella, napkins];
         Order danOrder = new Order(order1, dan);
         string danPackingLabel = danOrder.GetPackingLabel();
@@ -26,8 +25,8 @@ class Program
         float danTotal = danOrder.GetTotalPrice();
         Console.WriteLine($"Packing Label: \n{danPackingLabel}Total: ${danTotal} \n \nShipping Label: \n {danShippingLabel}");
 
-        Console.WriteLine("Bill From Nowhere's order:");
         Console.WriteLine("");
+        Console.WriteLine("Bill From Nowhere's order:");
         List<Product> order2 = [bread,nails];
         Order billOrder = new Order(order2, bill);
         string billPackingLabel = billOrder.GetPackingLabel();
